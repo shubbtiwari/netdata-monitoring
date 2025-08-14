@@ -1,21 +1,21 @@
 # Netdata Monitoring Task
 
-## 📌 Overview
+##  Overview
 This project demonstrates setting up **Netdata** for real-time system monitoring using **Docker**.  
 Netdata provides second-by-second insights into system performance, including CPU usage, memory usage, disk I/O, network activity, and container statistics.
 
 ---
 
-## 🛠 Tools Used
+##  Tools Used
 - **Docker** (for containerized Netdata deployment)
 - **Netdata** (real-time monitoring tool)
 - **Web Browser** (to view the dashboard)
 
 ---
 
-## 🚀 Steps Followed
+##  Steps Followed
 
-### 1️⃣ Run Netdata in Docker
+###  Run Netdata in Docker
 ```bash
 docker run -d --name=netdata -p 19999:19999 --cap-add=SYS_PTRACE --security-opt apparmor=unconfined netdata/netdata
 ## Access the Dashboard
